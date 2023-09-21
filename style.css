@@ -37,13 +37,13 @@ html,
 }
 .card {
     width: 27vw;
-    min-height: 40%;
+    min-height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 30px;
-    margin: 4rem;
+    margin: 5rem;
     background-color: rgba(240, 166, 178, 0.245);
     position: relative;
     transition: 0.5s;
