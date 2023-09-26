@@ -12,10 +12,10 @@ body{
 }
 @keyframes fadeIn{
     0% {
-        opacity: 0%;
+        opacity: 0;
     }
     100%{
-        opacity: 100%;
+        opacity: 1;
     }
 }
 .title{
@@ -24,12 +24,12 @@ body{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: bisque;
+    background-color: #ffe4c4;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition: 0.5s;
 }
 .title:hover{
-    background-color: lightpink;
+    background-color: #EB9486;
     font-size: 70px;
 }
 .undertitle{
@@ -38,14 +38,19 @@ body{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: bisque;
+    background-color: #ffe4c4;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.5s;
+}
+.undertitle:hover{
+    background-color: #EB9486;
+    font-size: 35px;
 }
 .container{
     display:flex;
     flex-wrap: wrap;
     width: 100vw;
-    background-color: bisque;
+    background-color: #ffe4c4;
     margin:0rem auto;
     justify-content: space-around;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -63,7 +68,7 @@ body{
     background-color: rgba(240, 166, 178, 0.245);
     position: relative;
     transition: 0.5s;
-    box-shadow: 10px 10px 5px 8px lightpink;
+    box-shadow: 10px 10px 5px 8px #EB9486;
 }
 .card:hover {
     transform: translateY(-15px);
@@ -73,12 +78,25 @@ body{
     margin: 1rem 0;
     justify-content: space-around;
 }
+.card-title:hover{
+    color: #EB9486;
+}
 .card-img {
     width: 100%;
     height: 38rem;
-   
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.card-img:hover{
+    filter: grayscale(0)
 }
 .card-desc{
     font-size: 18px;
     text-align: center;
+    transition: 0.3s;
+}
+
+.card-desc:hover{
+    color: #EB9486;
 }
