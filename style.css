@@ -82,6 +82,16 @@ body{
     transition: 0.5s;
     box-shadow: 10px 10px 5px 8px #EB9486;
 }
+@media screen and (max-width: 900px) {
+    .card{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card{
+        width: 100%;
+    }
+}
 .card:hover {
     transform: translateY(-15px);
 }
